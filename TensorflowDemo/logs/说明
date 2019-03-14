@@ -1,0 +1,8 @@
+'''
+bug修改：1、writer = tf.train.SummaryWriter("logs/", sess.graph) 改为：
+writer = tf.summary.FileWriter("logs/", sess.graph)
+【重要】：执行 tensorboard时候的错误：
+1、必须是一个等号，为 tensorboard --logdir="C:\logs"
+2、必须是双引号
+3、cmd是站在logs母文件夹的体内的，是不进logs文件夹的。
+'''
